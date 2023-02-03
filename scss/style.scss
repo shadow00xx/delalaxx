@@ -1,0 +1,200 @@
+$bg: #fef5df;
+
+@import "_about";
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo+Play:wght@800&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lateef:wght@700&display=swap");
+
+body {
+    font-family: "Cairo Play", cursive;
+    font-family: "Noto Naskh Arabic", serif;
+}
+
+header {
+    background-color: #183153;
+    color: #fff;
+}
+
+.brand {
+    // font-family: "Noto Naskh Arabic", serif;
+    // font-family: "Reem Kufi", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    font-family: "Lateef", serif;
+}
+/* prodect */
+.products {
+    width: 450px;
+    height: 250px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.prodect-con {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prodect-con a {
+    text-decoration: none;
+}
+
+.prodects-form {
+    width: 600px;
+    height: 300px;
+    margin: 4rem auto;
+}
+
+// slide
+.slidex {
+    img {
+        width: 100%;
+        height: 250px !important;
+        object-fit: cover;
+    }
+
+    .carousel-caption {
+        // color: black;
+    }
+}
+
+// nav opiton
+.c-nav-opiton {
+    // background-color: rgb(131, 145, 145);
+
+    li {
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            padding: 5px 0;
+            // margin: 10px 5px;
+            border: 1px solid rgb(44, 153, 153);
+            border-radius: 10px;
+            color: #183153;
+            font-size: 1rem;
+            cursor: pointer;
+
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+    .dropdown-c {
+        a {
+            padding: 50px 20px !important;
+            margin: 0 1rem !important;
+        }
+    }
+}
+
+// footer
+
+footer {
+    background-color: #183153;
+    color: #fff;
+    // position: fixed;
+    // bottom: 0;
+    height: 40px;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #183153;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+
+.back-to-top i {
+    font-size: 28px;
+    color: #fff;
+    line-height: 0;
+}
+
+.back-to-top:hover {
+    background: #18315381;
+    color: #fff;
+}
+
+.back-to-top .active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pro .card {
+    margin-left: 10px;
+}
+
+.pro-con {
+    background-color: rgb(205, 242, 243);
+    overflow: scroll;
+
+    .title-pro {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 70px;
+        border: 1px dotted red;
+        h1 {
+            // color: chartreuse;
+        }
+        a {
+            text-decoration: none;
+            font-size: 20px;
+        }
+    }
+
+    .flex-con {
+        background-color: #fff;
+        display: flex;
+
+        .item-1 {
+            width: 220px;
+            height: 220px;
+            padding: 15px 15px;
+            .card {
+                width: 180px;
+                height: 180px;
+                .img-con {
+                    width: 150px;
+                    height: 155px;
+                }
+
+                img {
+                    border-radius: 15px;
+                    width: 150px;
+                    height: 150px;
+                    padding: 5px 0;
+                }
+                .card-det {
+                    display: flex;
+                    justify-content: space-around;
+                    .card-t {
+                        text-decoration: none;
+                        color: blue;
+                        font-size: 18px;
+                    }
+                    .price {
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.c-nav-opiton {
+    flex-wrap: nowrap;
+}

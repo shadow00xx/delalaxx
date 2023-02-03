@@ -1,0 +1,138 @@
+
+// tablet and under
+
+@media (max-width: 768px) {
+    header {
+        height: 70px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+    }
+  
+
+    .container {
+        // max-width: fit-content;
+        padding: 0 15px;
+    }
+    #nav {
+        display: none;
+    }
+  
+    .mobile {
+        display: block;
+    }
+  
+    .hero {
+        .grid {
+            grid-template-columns: auto;
+            gap: 0;
+        }
+    }
+    .services .grid {
+        grid-template-columns: repeat(2, 1fr) ;
+        margin: 50px auto;
+        gap:50px 0;
+     
+     
+        text-align: center;
+
+        .services-block {
+            width: auto;
+        }
+    }
+ 
+
+    .work {
+        .flex {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+  
+    .contact {
+        padding: 0;
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .cont {
+            padding: 0;
+        }
+        .hero-form {
+            width: 100%;
+        }
+    }
+  }
+  
+  // mobile
+  
+  @media (max-width: 500px) {
+    header {
+        height: 60px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+    }
+  
+    .container {
+        // max-width: fit-content;
+        padding: 0 15px;
+    }
+    #nav {
+        display: none;
+    }
+  
+    .mobile {
+        display: block;
+    }
+  
+    .hero {
+        .grid {
+            grid-template-columns: auto;
+            gap: 0;
+        }
+    }
+    .services .grid {
+        grid-template-columns: 1fr !important;
+        // margin-left: 10px;
+    }
+  
+    .work {
+        .flex {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+  
+    .contact {
+        padding: 0;
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .cont {
+            padding: 0;
+        }
+        .hero-form {
+            width: 100%;
+        }
+    }
+    .footer {
+        font-size: 16px;
+        .grid {
+            display: flex;
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+  }
+  
+  
